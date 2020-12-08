@@ -23,6 +23,7 @@ const Board = () => (
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>7</th>
@@ -33,6 +34,7 @@ const Board = () => (
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>6</th>
@@ -43,6 +45,7 @@ const Board = () => (
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>5</th>
@@ -53,6 +56,7 @@ const Board = () => (
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>4</th>
@@ -63,6 +67,7 @@ const Board = () => (
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>3</th>
@@ -73,6 +78,7 @@ const Board = () => (
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>2</th>
@@ -83,6 +89,7 @@ const Board = () => (
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>1</th>
@@ -93,6 +100,7 @@ const Board = () => (
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
                 <StyledBoardSquare dark={false} ></StyledBoardSquare>
                 <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
         </tbody>
     </table>

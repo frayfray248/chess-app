@@ -4,6 +4,7 @@ const Board = () => (
     <table>
         <tbody>
             <tr>
+                <th></th>
                 <th>a</th>
                 <th>b</th>
                 <th>c</th>

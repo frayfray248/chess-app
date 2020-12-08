@@ -1,3 +1,5 @@
-const App = () => (<p>Hello World</p>);
+import Board from './Board';
+
+const App = () => (<Board />);
 
 export default App;

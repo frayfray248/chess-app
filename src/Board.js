@@ -1,3 +1,5 @@
+import StyledBoardSquare from "./StyledBoardSquare";
+
 const Board = () => (
     <table>
         <tbody>
@@ -13,27 +15,83 @@ const Board = () => (
             </tr>
             <tr>
                 <th>8</th>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>7</th>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>6</th>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>5</th>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>4</th>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>3</th>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>2</th>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
             </tr>
             <tr>
                 <th>1</th>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
+                <StyledBoardSquare dark={false} ></StyledBoardSquare>
+                <StyledBoardSquare dark={true} ></StyledBoardSquare>
             </tr>
         </tbody>
     </table>

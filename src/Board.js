@@ -1,51 +1,53 @@
 import StyledBoardSquare from "./StyledBoardSquare";
 
-// board dimensions
-const boardWidth = 8;
-const boardHeight = 8;
+const Board = () => {
 
-// constructing board IIFE
-const boardArr = (() => {
-    // The code below creates a 2D array using spreading and mapping.
-    // The elements are alternating booleans to determine if a chess 
-    // square is dark or light.
-    // Each row is filled with alternating booleans
-    // Each row also alternates starting booleans
-    return [...new Array(boardHeight)].map((_, colIndex) => 
-    [... new Array(boardWidth)].map((_, rowIndex) => {
-        if (colIndex % 2 === 0) {
-            return rowIndex % 2 !== 0
-        } else {
-            return rowIndex % 2 === 0
-        }
-    }))
-})();
+    // board dimensions
+    const boardWidth = 8;
+    const boardHeight = 8;
 
-
-const Board = () => (
-    <table>
-        <tbody>
-            <tr>
-                <th></th>
-                {
-                    // board letter position headers
-                    [...new Array(boardWidth)].map((_, index) => (
-                        <th>{String.fromCharCode('a'.charCodeAt(0) + index)}</th>
-                    ))
+    // constructing board IIFE
+    const boardArr = (() => {
+        // The code below creates a 2D array using spreading and mapping.
+        // The elements are alternating booleans to determine if a chess 
+        // square is dark or light.
+        // Each row is filled with alternating booleans
+        // Each row also alternates starting booleans
+        return [...new Array(boardHeight)].map((_, colIndex) =>
+            [... new Array(boardWidth)].map((_, rowIndex) => {
+                if (colIndex % 2 === 0) {
+                    return rowIndex % 2 !== 0
+                } else {
+                    return rowIndex % 2 === 0
                 }
-            </tr>
-            {
-                // chess board number position headers and squares
-            boardArr.map((row, index) => (
+            }))
+    })();
+
+    return (
+        <table>
+            <tbody>
                 <tr>
-                    {/* number position header */}
-                    <th>{boardHeight - index}</th>
-                    {/* squares */}
-                    {row.map(dark => <StyledBoardSquare dark={dark}/>)}
+                    <th></th>
+                    {
+                        // board letter position headers
+                        [...new Array(boardWidth)].map((_, index) => (
+                            <th>{String.fromCharCode('a'.charCodeAt(0) + index)}</th>
+                        ))
+                    }
                 </tr>
-            ))}
-        </tbody>
-    </table>
-);
+                {
+                    // chess board number position headers and squares
+                    boardArr.map((row, index) => (
+                        <tr>
+                            {/* number position header */}
+                            <th>{boardHeight - index}</th>
+                            {/* squares */}
+                            {row.map(dark => <StyledBoardSquare dark={dark} />)}
+                        </tr>
+                    ))}
+            </tbody>
+        </table>
+    )
+};
 
 export default Board;

@@ -27,18 +27,20 @@ const Board = () => (
         <tbody>
             <tr>
                 <th></th>
-                <th>a</th>
-                <th>b</th>
-                <th>c</th>
-                <th>d</th>
-                <th>e</th>
-                <th>f</th>
-                <th>g</th>
-                <th>h</th>
+                {
+                    // board letter position headers
+                    [...new Array(boardWidth)].map((_, index) => (
+                        <th>{String.fromCharCode('a'.charCodeAt(0) + index)}</th>
+                    ))
+                }
             </tr>
-            {boardArr.map((row, index) => (
+            {
+                // chess board number position headers and squares
+            boardArr.map((row, index) => (
                 <tr>
-                    <th>{index}</th>
+                    {/* number position header */}
+                    <th>{boardHeight - index}</th>
+                    {/* squares */}
                     {row.map(dark => <StyledBoardSquare dark={dark}/>)}
                 </tr>
             ))}

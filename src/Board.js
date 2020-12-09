@@ -14,7 +14,7 @@ const Board = () => {
         // Each row is filled with alternating booleans
         // Each row also alternates starting booleans
         return [...new Array(boardHeight)].map((_, colIndex) =>
-            [... new Array(boardWidth)].map((_, rowIndex) => {
+            [...new Array(boardWidth)].map((_, rowIndex) => {
                 if (colIndex % 2 === 0) {
                     return {
                         dark : rowIndex % 2 !== 0
